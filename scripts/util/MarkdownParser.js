@@ -33,7 +33,6 @@
 
 		if ( typeof startIndex !== 'undefined' && typeof endIndex !== 'undefined' ) {
 
-			//console.log('f:', startIndex, endIndex);
 			text = lines.slice( startIndex, endIndex ).join('\n');
 		}
 
@@ -103,8 +102,6 @@
 		var patternCodeStart = /^\-\- code (.+)/;
 		var patternCodeEnd = /^\-\-/;
 
-		//var block = findBlock( text, patternCodeStart, patternCodeEnd );
-
 		text = findCode(text);
 
 		return text;
@@ -124,8 +121,6 @@
 
 			var lexer = new marked.Lexer(options);
 			var tokens = lexer.lex(content);
-			//console.log(tokens);
-			//console.log(lexer.rules);
 
 			return marked( content );
 		};

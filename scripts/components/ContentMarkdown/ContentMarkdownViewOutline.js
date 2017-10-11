@@ -19,7 +19,6 @@
 			var $ul = $('<ul></ul>');
 			$headings.each(function() {
 
-				//console.log(this.nodeName); // H1, H2
 				var level = parseInt(this.nodeName.substr(1)) - 1;
 
 				var $li = $('<li><a href="#'+this.id+'" onclick="return false;" style="margin-left: '+level+'em;">'+$(this).text()+'</a></li>');
