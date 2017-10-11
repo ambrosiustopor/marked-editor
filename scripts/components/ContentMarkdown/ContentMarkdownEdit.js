@@ -23,7 +23,6 @@
 			this.$el.html( html );
 
 			var $textarea = this.$el.find('textarea');
-			//enableTabOnTextarea( $textarea );
 			$textarea.autosize();
 			$textarea.enableSmartTab();
 
